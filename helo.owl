@@ -1,0 +1,1281 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/8/helo.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2011/8/helo.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="" IRI="http://www.semanticweb.org/ontologies/2011/8/helo.owl#"/>
+    <Prefix name="helo" IRI="http://www.semanticweb.org/ontologies/2011/8/helo.owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">creator: Ross D. King</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">creator: Andrey Rzhetsky</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">creator: Larisa Soldatova</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">0.1</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Bayes_rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bayesian_inference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gaussian_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#abduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#alternative_hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#assumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conclusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#conjunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#continuant_entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#continuous_random_variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#continuous_variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#deduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dependent_continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#discrete_random_variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#discrete_variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#disjunction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#evidence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#expert_estimation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#generically_dependent_continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#homologus_inference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hypotheses_set"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#independent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#independent_continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#induction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#information_content_entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#joint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#likelihood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#logic_representation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#logical_operator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#material_entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mathematical_entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#method_of_probability_estimation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#model"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#negation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#negative_hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#obtaining_of_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#obtaining_of_probability_estimate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#obtaining_of_research_statement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#p-value"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plan_specification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#posterior_probability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#posterior_probability_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#prior_probability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#prior_probability_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#probability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#probability_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#probability_mass_function"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#procedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#quality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#random"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#random_event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#realizable_entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#representation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#research_hypothesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#research_statement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sample_space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scientific_law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#specifically_dependent_continuant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#statistical_calculation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#summary_measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#textual_representation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#theorem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#variable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#variance"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#derives_into"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#disputes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_disputing_evidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_input"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_output"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_participant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_probability"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_quality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_refuting_evidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_representation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has_supporting_evidence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#is_about"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#refutes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#supports"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Bayes_rule"/>
+        <Class IRI="#rule"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bayesian_inference"/>
+        <Class IRI="#method_of_probability_estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gaussian_distribution"/>
+        <Class IRI="#probability_distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#abduction"/>
+        <Class IRI="#method_of_probability_estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#alternative_hypothesis"/>
+        <Class IRI="#hypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#assumption"/>
+        <Class IRI="#research_statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conclusion"/>
+        <Class IRI="#research_statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#conjunction"/>
+        <Class IRI="#logical_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#continuant_entity"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#continuous_random_variable"/>
+        <Class IRI="#continuous_variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#continuous_variable"/>
+        <Class IRI="#variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#data"/>
+        <Class IRI="#information_content_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#deduction"/>
+        <Class IRI="#method_of_probability_estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dependent_continuant"/>
+        <Class IRI="#continuant_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#discrete_random_variable"/>
+        <Class IRI="#discrete_variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#discrete_variable"/>
+        <Class IRI="#variable"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#disjunction"/>
+        <Class IRI="#logical_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#evidence"/>
+        <Class IRI="#role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#expert_estimation"/>
+        <Class IRI="#method_of_probability_estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#function"/>
+        <Class IRI="#mathematical_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#generically_dependent_continuant"/>
+        <Class IRI="#dependent_continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#homologus_inference"/>
+        <Class IRI="#method_of_probability_estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hypotheses_set"/>
+        <Class IRI="#research_statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hypothesis"/>
+        <Class IRI="#research_statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#independent"/>
+        <Class IRI="#quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#independent_continuant"/>
+        <Class IRI="#continuant_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#induction"/>
+        <Class IRI="#method_of_probability_estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#information_content_entity"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#joint"/>
+        <Class IRI="#quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#likelihood"/>
+        <Class IRI="#probability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#logic_representation"/>
+        <Class IRI="#representation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#logical_operator"/>
+        <Class IRI="#function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#material_entity"/>
+        <Class IRI="#independent_continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mathematical_entity"/>
+        <Class IRI="#information_content_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mean"/>
+        <Class IRI="#summary_measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#method_of_probability_estimation"/>
+        <Class IRI="#plan_specification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#model"/>
+        <Class IRI="#scientific_law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#negation"/>
+        <Class IRI="#logical_operator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#negative_hypothesis"/>
+        <Class IRI="#hypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#obtaining_of_data"/>
+        <Class IRI="#procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#obtaining_of_probability_estimate"/>
+        <Class IRI="#procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#obtaining_of_research_statement"/>
+        <Class IRI="#procedure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#p-value"/>
+        <Class IRI="#probability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plan_specification"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#posterior_probability"/>
+        <Class IRI="#probability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#posterior_probability_distribution"/>
+        <Class IRI="#probability_distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#prior_probability"/>
+        <Class IRI="#probability"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#prior_probability_distribution"/>
+        <Class IRI="#probability_distribution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#probability"/>
+        <Class IRI="#function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#probability_distribution"/>
+        <Class IRI="#function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#probability_mass_function"/>
+        <Class IRI="#function"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#procedure"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#quality"/>
+        <Class IRI="#specifically_dependent_continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#random"/>
+        <Class IRI="#quality"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#random_event"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#realizable_entity"/>
+        <Class IRI="#specifically_dependent_continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#representation"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#research_hypothesis"/>
+        <Class IRI="#hypothesis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#research_statement"/>
+        <Class IRI="#information_content_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#research_statement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <Class IRI="#logical_operator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#research_statement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_part"/>
+            <Class IRI="#research_statement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#research_statement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_probability"/>
+            <Class IRI="#probability"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#research_statement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_representation"/>
+            <Class IRI="#logic_representation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#research_statement"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#has_representation"/>
+            <Class IRI="#representation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#role"/>
+        <Class IRI="#realizable_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rule"/>
+        <Class IRI="#scientific_law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sample_space"/>
+        <Class IRI="#entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#scientific_law"/>
+        <Class IRI="#research_statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#specifically_dependent_continuant"/>
+        <Class IRI="#dependent_continuant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#statistical_calculation"/>
+        <Class IRI="#method_of_probability_estimation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#summary_measure"/>
+        <Class IRI="#mathematical_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#textual_representation"/>
+        <Class IRI="#representation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#theorem"/>
+        <Class IRI="#research_statement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#variable"/>
+        <Class IRI="#mathematical_entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#variance"/>
+        <Class IRI="#summary_measure"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#derives_into"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#disputes"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_disputing_evidence"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_input"/>
+        <ObjectProperty IRI="#has_participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_output"/>
+        <ObjectProperty IRI="#has_participant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_part"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_participant"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_probability"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_quality"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_refuting_evidence"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_representation"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#has_supporting_evidence"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#is_about"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#refutes"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#supports"/>
+        <ObjectProperty IRI="#relation"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#has_probability"/>
+    </FunctionalObjectProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bayes_rule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">                    P(e | R=r) P(R=r)   
+P(R=r | e) = -----------------
+                             P(e)
+where P(R=r|e) denotes the probability that random variable R has value r given evidence e. The denominator is just a normalizing constant that ensures the posterior adds up to 1; it can be computed by summing up the numerator over all possible values of R, i.e.,
+P(e) = P(R=0, e) + P(R=1, e) + ... = sum_r P(e | R=r) P(R=r)
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bayesian_inference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a method of probability estimation based on the Bayesian rule</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gaussian_distribution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> is a probability distribution that has a bell-shaped probability density function, known as the Gaussian function or informally as the bell curve.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#abduction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">to abduce A from B means determining that A is sufficient, but not necessary, for B.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#alternative_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">alternative (often unexpected) to the research hypothesis explanation of a phenomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#assumption</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is a statement that is taken as if it were true without preponderance of the facts. 
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conclusion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a statement that is produced as an output of scientific investigation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#conjunction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> logical operator that results in true if both of its operands are true, otherwise the value of false.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#continuant_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An entity [bfo:Entity] that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#continuant_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">from BFO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#continuant_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">continuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#continuous_random_variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a random variable that can take on any value between its minimum value and its maximum value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#continuous_variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a variable that can take on any value between its minimum value and its maximum value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">information that has been collected/generated towards some purpose.
+
+(SIO)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">synonym to data item in OBI, IAO, SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#deduction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">reasoning  in which specific examples are derived from general propositions.
+
+wikipedia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dependent_continuant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A continuant [snap:Continuant] that is either dependent on one or other independent continuant [snap:IndependentContinuant] bearers or inheres in or is borne by other entities.
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dependent_continuant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">from BFO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#discrete_random_variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a random variable can take on a number of fixed values between its minimum value and its maximum value, it is called a continuous variable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#discrete_variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a variable can take on a number of fixed values between its minimum value and its maximum value, it is called a continuous variable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#disjunction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a logical operator that results in true whenever one or more of its operands are true. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#disputes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">from BFO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#evidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">information that is used to support or reject a research statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#evidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ECO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#expert_estimation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a method of probability estimation based on expert background knowledge and beliefs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#function</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is a relation between a set of inputs and a set of potential outputs with the property that each input is related to exactly one output. An example of such a relation is defined by the rule f(x) = x^2, which relates an input x to its square, which are both real numbers. 
+
+(wikipedia)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#function</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mathematical function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#generically_dependent_continuant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A continuant [snap:Continuant] that is dependent on one or other independent continuant [snap:IndependentContinuant] bearers. For every instance of A requires some instance of (an independent continuant [snap:IndependentContinuant] type) B but which instance of B serves can change from time to time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#generically_dependent_continuant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">from BFO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#has_disputing_evidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#has_input</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#has_output</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#has_participant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">RO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#has_probability</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">i-RO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#has_refuting_evidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#has_representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">i-RO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#has_supporting_evidence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#homologus_inference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">inference based on homology rules. For example, A is homologus to B if A and B share an ancestor C.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#homologus_inference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">homological inference
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hypotheses_set</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a set of possible explanations for a phenomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hypotheses_set</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">hypotheses set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a proposed explanation for a phenomenon. (wikipedia)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#independent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">the occurrence of one entity does not affect the occurence of the other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#independent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">independence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#independent_continuant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">from BFO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#induction</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">reasoning that constructs or evaluates general propositions that are derived from specific examples.
+
+wikipedia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#information_content_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">an information content entity is an entity that is generically dependent on some artifact and stands in relation of aboutness to some entity
+
+(IAO)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#information_content_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">IAO, OBI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#information_content_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">information entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#joint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a quality simultaneously describing two or more random variables.
+
+examples &#39;joint probability&#39;, &#39;jointly distributed random variables&#39;.
+
+source: Ross,Sh.M. Probability Models. International Edition, Academic press, 2007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#likelihood</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is a function of the parameters of a statistical model, defined as follows: the likelihood of a set of parameter values given some observed outcomes is equal to the probability of those observed outcomes given those parameter values.
+
+wikipedia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#logic_representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">representation of an entity in a form of a logical expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#logic_representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LABORS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#logical_operator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a function on binary variables whose output is also a binary variable. Logical operations include AND (conjunction), O (disjunction) , NOT (negation), and combinations of those operations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#material_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">from OBI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#mathematical_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mean</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is the central tendency of a collection of numbers taken as the sum of the numbers divided by the size of the collection.
+
+wikipedia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#method_of_probability_estimation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a method of a probability calculation, inference, or expert estimation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#model</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a logical or mathematical representation of a phenomena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#negation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a logical operator that takes truth to falsity and vice versa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#negative_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a logical negation of the research hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#negative_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">negative hypothesis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#obtaining_of_data</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a procedure for obtaining data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#obtaining_of_probability_estimate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a procedure for obtaining of a probability estimate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#obtaining_of_research_statement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a procedure for obtaining research statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#p-value</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is the estimated probability of rejecting the null hypothesis (H0, research hypothesis) of a study question when that hypothesis is true.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#plan_specification</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A plan specification is an information entity about a realizable entity. The specification includes parts such as objective specification, action specifications and conditional specifications. When concretized it is realized in a process in which the bearer tries to achieve the objectives, in part by taking the actions specified.
+
+(OBI)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#plan_specification</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OBI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#posterior_probability</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a probability that was estimated after the collection of new data or other evidence. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#posterior_probability_distribution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a probability distribution function that was estimated after the collection of new data or other evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#prior_probability</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a probability that was estimated before the collection of new data or other evidence. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#prior_probability_distribution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a probability distribution function that was estimated before the collection of new data or other evidence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#probability</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a mathematical function expressing knowledge or  belief that a research statement is true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#probability_distribution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is a function that describes the probability of a random variable taking certain values.
+
+(wikipedia)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#probability_distribution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">probability distribution function</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#probability_mass_function</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is a function that gives the probability that a discrete random variable is exactly equal to some value.
+
+wikipedia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"> the sequence of actions or instructions to be followed in solving a problem or accomplishing a task.
+
+(Cardiac Electrophysiology Ontology)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#procedure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LABORS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#quality</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OBI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#random</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">  a quality of a variable, an event, or a process with no certaint value or outcome </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#random</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">randomness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#random_event</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">any subset of the sample space S.
+
+source: Ross,Sh.M. Probability Models. International Edition, Academic press, 2007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#realizable_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A specifically dependent continuant [snap:SpecificallyDependentContinuant] that inheres in continuant [snap:Continuant] entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.
+
+Examples: the role of being a doctor, the function of the reproductive organs, the disposition of blood to coagulate, the disposition of metal to conduct electricity
+
+Comment: If a realizable entity [snap:RealizableEntity] inheres in a continuant [snap:Continuant], this does not imply that it is actually realized.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#realizable_entity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">OBI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#refutes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A representation is a entity that in some way represents another entity (or attribute thereof).
+
+(SIO)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LABORS, SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#research_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is a proposed explanation for a phenomenon put forward with an intention to test it within a scientific investigation.
+
+(wikipedia)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#research_hypothesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">the null hypothesis (H0) of a study </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#research_statement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a meaningful declarative sentence, denoting scientific knowledge, that has a probability of being true</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#research_statement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">researh statement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A realizable entity [snap:RealizableEntity] the manifestation of which brings about some result or end that is not essential to a continuant [snap:Continuant] in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant [snap:Continuant] in some kinds of natural, social or institutional contexts.
+
+Examples: the role of a person as a surgeon, the role of a chemical compound in an experiment, the role of a patient relative as defined by a hospital administrative form, the role of a woman as a legal mother in the context of system of laws, the role of a biological grandfather as legal guardian in the context of a system of laws, the role of ingested matter in digestion, the role of a student in a university</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#role</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BFO, OBI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rule</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a logical or mathematical description of a phenomena in a form IF -&gt; THEN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sample_space</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a set of all possible outcomes of an experiment
+
+source: Ross,Sh.M. Probability Models. International Edition, Academic press, 2007</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scientific_law</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a statement about a phenomena proved by a scientific method and typicaly represented in an analitical form with an empirically determined constants. 
+
+Example: conservation laws</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#specifically_dependent_continuant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A continuant [snap:Continuant] that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
+
+Examples: the mass of a cloud, the smell of mozzarella, the liquidity of blood, the color of a tomato, the disposition of fish to decay, the role of being a doctor, the function of the heart in the body: to pump blood, to receive de-oxygenated and oxygenated blood, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#specifically_dependent_continuant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">from BFO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#statistical_calculation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a method of probability estimation based on statistical rules.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#summary_measure</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a measure used to summaries a set of observations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#supports</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">SIO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#textual_representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">representation of an entity in a form of a textual expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#textual_representation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">LABORS</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#theorem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a statement that has been proven on the basis of previously proved statements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#variable</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a mathematical entity that has &#39;various&#39; values. values can be numerical or categorical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#variance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">is a measure of how far a set of numbers is spread out.
+
+wikipedia</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
